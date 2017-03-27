@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h2>Home</h2>
+
+<p>Velkommen til! Klik her for at læse mere: @Html.ActionLink("Secret area!","Secret","Home")</p>
+@Html.ActionLink("Create a user!","Create","User")
+
+@*<h1>Noter!</h1>
+<p>På grund af dovnskab, er noteappen bare sat ind her!</p>
+
+<div id="notes">
+
+</div>
+@section scripts{
+    <script>
+        $(function () {
+            $.get("Notes/", function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    $('#notes').append("<p><span>SOMETHING HERE</span></p>")
+                };
+            });
+        });
+        //TODO Add jquery functions
+    </script>    
+}*@

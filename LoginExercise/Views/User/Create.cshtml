@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "User", FormMethod.Post))
+{
+    <input type="text" placeholder="Username" name="username" value="" />
+    <input type="password" placeholder="Password" name="password" value="" />
+    <button type="submit">Create user</button>
+}
+
+<p>@ViewBag.Message - @Html.ActionLink("Login","Login","User")</p>
